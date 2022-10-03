@@ -2,7 +2,7 @@ import React from "react";
 import RecipeView from "./RecipeView";
 
 function RecipeList({ recipes, deleteRecipe }) {
-  console.log(recipes)
+  console.log(recipes);
   return (
     <div className="recipe-list">
       <table>
@@ -17,7 +17,7 @@ function RecipeList({ recipes, deleteRecipe }) {
           </tr>
         </thead>
         <tbody>
-        {recipes.map((recipe, index) => (
+          {recipes.map((recipe, index) => (
             <RecipeView
               deleteRecipe={() => deleteRecipe(index)}
               key={index}
